@@ -113,6 +113,7 @@ public class Traversals {
         TreeNode root = new TreeNode("a");
         TreeNode left = root.addLeft("b");
         left.addRight("c");
+        left.addLeft("x");
         TreeNode right = root.addRight("d");
 //        TreeNode root = new TreeNode(vals, 0);
         System.out.println("Binary tree values are: ");
@@ -120,7 +121,8 @@ public class Traversals {
         preOrderTraversalList(traverses, root, 0, 20, "root");
         printTraverseList(traverses);
 
-        //        preOrderTraversal(root);
+//        inOrderTraversal(root, 0, "root");
+//        preOrderTraversal(root);
 //        postOrderTraversal(root);
     }
 }
